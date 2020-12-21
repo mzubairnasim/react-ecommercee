@@ -1,0 +1,52 @@
+{
+  "products":[
+    {
+       "id":1,
+       "title":"black shirt",
+       "img":"products/a.jpg",
+       "price":10
+    },
+    {
+      "id":2,
+      "title":"black shirt",
+      "img":"products/b.jpg",
+      "price":20
+   },
+   {
+    "id":3,
+    "title":"grey shirt",
+    "img":"products/c.jpg",
+    "price":30
+ },
+ {
+  "id":4,
+  "title":"pink shirt",
+  "img":"products/d.jpg",
+  "price":40
+},
+{
+  "id":5,
+  "title":"white pant",
+  "img":"products/e.jpg",
+  "price":50
+},
+{
+  "id":6,
+  "title":"green shirt",
+  "img":"products/f.jpg",
+  "price":60
+},
+{
+  "id":7,
+  "title":"yellow pent",
+  "img":"products/g.jpg",
+  "price":70
+},
+{
+  "id":8,
+  "title":"cyan romal",
+  "img":"products/h.jpg",
+  "price":80
+}
+  ]
+}
