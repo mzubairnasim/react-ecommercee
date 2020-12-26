@@ -13,7 +13,7 @@ export default function Cart({dlt}) {
    const open=()=>{
     setcontact(!contact)
     dispatch({type:"cart",payload:""})
-    alert(`Your has been placed and your order number is ${Math.floor(Math.random()*100)}`)
+    alert(`Your Order has been placed and your order number is ${Math.floor(Math.random()*100)}`)
     firebase.auth().signOut()
     history.push('/signin')
 }

@@ -6,28 +6,13 @@ import firebase from '../config/firebase'
 import {maindata, setcart} from '../store/action'
 import { useHistory } from 'react-router-dom';
 export default function Home() {
-    const [email, setemail] = useState('')
+   
     const data = useSelector(state => state.data)
     const dispatch=useDispatch()
     const cart = useSelector(state => state.cart)
     const history=useHistory()
 
-    useEffect(() => {
-        firebase.auth().onAuthStateChanged((user) => {
-         if (user) {
-             setemail(user.email)
-         } 
-   
-         else {
-           history.push("/")
-         }
-       });
-       
-       dispatch(maindata())
-      
-        
-   },[])
- 
+
 
     const add=(p)=>{
        
@@ -66,7 +51,6 @@ export default function Home() {
 
     return (
         <div className='constainer'>
-         <h1>{email&&<h6>welcome {email}</h6> } </h1>
             <div className='row'>
                 <div className='col-md-8'>
                     <About data={data} add={add}/>
